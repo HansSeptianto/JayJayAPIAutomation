@@ -30,6 +30,7 @@ public class TestAPI {
                 .assertThat().body("total", Matchers.equalTo(13))
                 .assertThat().body("total_pages", Matchers.equalTo(2));
     }
+
     @Test
     public void testPostCreateUser(){
         String name = "Hans";
