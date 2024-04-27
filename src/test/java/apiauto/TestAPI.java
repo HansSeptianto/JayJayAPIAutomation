@@ -18,6 +18,7 @@ public class TestAPI {
                 .assertThat().body("data.first_name", Matchers.equalTo("Janet"))
                 .assertThat().body("data.last_name", Matchers.equalTo("Weaver"));
     }
+
     @Test
     public void testGetListUsers(){
         RestAssured
